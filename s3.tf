@@ -32,6 +32,15 @@ data "aws_iam_policy_document" "my-cdn-cf-policy" {
   }
 }
 
+resource "aws_s3_object" "index" {
+  bucket       = module.origin_bucket.s3_bucket_id
+  key          = "index.html"
+  source       = "${path.module}/files/index.html"
+  content_type = "text/html"
+
+  etag = filemd5("${path.module}/files/index.html")
+}
+
 resource "aws_s3_object" "global" {
   bucket       = module.origin_bucket.s3_bucket_id
   key          = "flag.png"

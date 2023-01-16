@@ -1,0 +1,55 @@
+<html lang="en" class="has-dark-text">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cloudfront location Based Content</title>
+    <style>
+      .gh-site,body{min-height:100vh}:root{--color-primary-text:#333;--color-secondary-text:#999;--color-white:#fff;--color-lighter-gray:#f6f6f6;--color-light-gray:#e6e6e6;--color-mid-gray:#ccc;--color-dark-gray:#444;--color-darker-gray:#15171a;--color-black:#000;--font-sans:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;--font-serif:Georgia,serif;--font-mono:Menlo,Consolas,Monaco,Liberation Mono,Lucida Console,monospace;--head-nav-gap:2.8rem;--h1-size:4.6rem;--gap:3.6rem}*,:after,:before{box-sizing:border-box}body,figure,h1,h4,p{margin:0}html:focus-within{scroll-behavior:smooth}a:not([class]){-webkit-text-decoration-skip:ink;text-decoration-skip-ink:auto}img{display:block;max-width:100%;height:auto}@media (prefers-reduced-motion:reduce){html:focus-within{scroll-behavior:auto}*,:after,:before{-webkit-animation-duration:0s!important;animation-duration:0s!important;-webkit-animation-iteration-count:1!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:0s!important}}html{font-size:62.5%}body{text-rendering:optimizespeed;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;background-color:var(--color-white);color:var(--color-primary-text);font-family:var(--font-sans);font-size:1.6rem;line-height:1.6;background-color:var(--background-color)}.gh-article-meta .gh-author-name a,a{color:var(--color-darker-gray);text-decoration:none}a:hover{opacity:.8}h1,h4{color:var(--color-darker-gray);letter-spacing:-.02em;line-height:1.15}h1{font-size:var(--h1-size)}h4{font-size:2.2rem}.gh-site{display:flex;flex-direction:column}.gh-main{flex-grow:1;padding-bottom:8rem;padding-top:8rem;padding-top:clamp(4.8rem,4rem + 2.5vw,8rem)}.gh-outer{padding-left:var(--gap);padding-right:var(--gap)}.gh-inner{margin:0 auto;max-width:var(--container-width,1200px)}.gh-canvas{display:grid;grid-template-columns:[full-start] minmax(var(--gap),auto) [wide-start] minmax(auto,calc((var(--container-width,1200px) - var(--content-width,720px))/ 2)) [main-start] min(var(--content-width,720px),calc(100% - var(--gap) * 2)) [main-end] minmax(auto,calc((var(--container-width,1200px) - var(--content-width,720px))/ 2)) [wide-end] minmax(var(--gap),auto) [full-end];grid-template-columns:repeat(12,minmax(0,1fr))}.gh-canvas>*{grid-column:main-start/main-end}.gh-article-image{grid-column:wide-start/wide-end;margin-top:4rem}.gh-article-image img{width:100%}.gh-content{font-size:var(--content-font-size, 1.8rem);letter-spacing:var(--content-letter-spacing, 0);margin-top:4rem}.gh-content>*+*{margin-bottom:0;margin-top:calc(1.6em * var(--content-spacing-multiplier,1))}.gh-content a{color:var(--ghost-accent-color);text-decoration:underline;word-break:break-word}@media (max-width:767px){:root{--h1-size:3.2rem!important;--gap:2rem}.gh-article-image{margin-top:2.4rem}.gh-content{font-size:1.7rem;margin-top:3.2rem}}@font-face{font-family:Manrope;font-weight:100 1000;src:url(../fonts/Manrope[wght].woff2) format("woff2-variations")}@font-face{font-family:Libre Baskerville;font-style:normal;font-weight:400;src:local(""),url(../fonts/libre-baskerville-v14-latin-regular.woff2) format("woff2")}@font-face{font-family:Libre Baskerville;font-style:normal;font-weight:700;src:local(""),url(../fonts/libre-baskerville-v14-latin-700.woff2) format("woff2")}@font-face{font-family:Libre Baskerville;font-style:italic;font-weight:400;src:local(""),url(../fonts/libre-baskerville-v14-latin-italic.woff2) format("woff2")}@font-face{font-family:JetBrains Mono;font-style:normal;font-weight:400;src:local(""),url(../fonts/jetbrains-mono-v13-latin-regular.woff2) format("woff2")}@font-face{font-family:JetBrains Mono;font-style:normal;font-weight:700;src:local(""),url(../fonts/jetbrains-mono-v13-latin-700.woff2) format("woff2")}@font-face{font-family:JetBrains Mono;font-style:normal;font-weight:800;src:local(""),url(../fonts/jetbrains-mono-v13-latin-800.woff2) format("woff2")}@font-face{font-family:JetBrains Mono;font-style:italic;font-weight:400;src:local(""),url(../fonts/jetbrains-mono-v13-latin-italic.woff2) format("woff2")}@font-face{font-family:JetBrains Mono;font-style:italic;font-weight:700;src:local(""),url(../fonts/jetbrains-mono-v13-latin-700italic.woff2) format("woff2")}:root{--font-sans:Manrope,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;--font-serif:Libre Baskerville,Georgia,Times,serif;--font-mono:JetBrains Mono,Menlo,Consolas,Monaco,Liberation Mono,Lucida Console,monospace;--color-primary-text:var(--color-darker-gray);--color-secondary-text-dark:rgba(0, 0, 0, 0.4);--color-secondary-text-light:hsla(0, 0%, 100%, 0.64);--color-secondary-text:var(--color-secondary-text-dark);--color-border:rgba(0, 0, 0, 0.08);--gap:clamp(24px, 1.7032rem + 1.9355vw, 48px);--head-nav-gap:32px;--container-width:1440px;--content-font-size:clamp(1.7rem, 0.38vw + 1.4rem, 2rem)}.gh-canvas>*{grid-column:4/span 6}@media (max-width:991px){.gh-canvas>*{grid-column:3/span 8}}@media (max-width:767px){.gh-canvas>*{grid-column:2/span 10}}@media (max-width:480px){.gh-canvas>*{grid-column:1/span 12}}.gh-article-meta{bottom:0;grid-row-start:1;margin:0!important;top:0;width:100%;z-index:10}.gh-article-meta-inner{display:flex;flex-direction:column;position:sticky;top:48px}.gh-article-meta .gh-author-image{height:72px;margin-bottom:16px;width:72px}.gh-article-meta .gh-author-name{font-size:1.9rem;letter-spacing:-.01em}.gh-article-date{color:var(--color-secondary-text);font-size:1.4rem;font-weight:480;margin-top:4px}.gh-article-title{font-size:clamp(4rem, 2.86vw + 2.63rem, 7.2rem);font-weight:800;grid-column:1/span 9;letter-spacing:-.03em;line-height:1}.gh-article-image{grid-column:1/span 12}.gh-article-image,.gh-content{margin-top:clamp(4rem,3rem + 3.125vw,8rem)}.gh-content{--content-spacing-multiplier:1.5;line-height:1.7;position:relative}.gh-content>:is(p,ul,ol){font-weight:480}@media (min-width:992px){.gh-article-meta{grid-column:1/span 3;position:absolute}}@media (max-width:991px){:is(.gh-article-title,.gh-article-excerpt){grid-column:1/span 10}.gh-article-meta{margin-bottom:32px!important}.gh-article-meta-inner{align-items:center;flex-direction:row}.gh-article-meta .gh-author-image{height:64px;margin-bottom:0;margin-right:12px;width:64px}.gh-article-meta-wrapper{flex-grow:1}}@media (max-width:767px){:is(.gh-article-title,.gh-article-excerpt){grid-column:1/span 12}.gh-content{font-size:var(--content-font-size)}}.gh-author-image{border-radius:50%;height:96px;margin-bottom:24px;overflow:hidden;width:96px}.gh-author-image img{height:100%;-o-object-fit:cover;object-fit:cover;width:100%}
+    </style>
+</head>
+
+<body class="post-template tag-photography has-classic-feed">
+    <div class="gh-site">
+        <main class="gh-main gh-outer" style="padding-top: 10px;">
+            <div class="gh-inner">
+                <article class="gh-article post">
+                    <header class="gh-article-header gh-canvas">
+                        <h1 class="gh-article-title" style="letter-spacing: -0.05em;">Cloudfront location Based Content
+                        </h1>
+                        <figure class="gh-article-image" style="margin-top: 2rem;">
+                            <img srcset="flag.png" sizes="(max-width: 1200px) 100vw, 1200px"
+                                alt="Cloudfront location Based Content">
+                        </figure>
+                    </header>
+
+                    <section class="gh-content gh-canvas" style="margin-top: 4rem;">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley of type and scrambled it to make a type specimen book. It has survived not only five
+                            centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+                            passages, and more recently with desktop publishing software like Aldus PageMaker including
+                            versions of Lorem Ipsum.</p>
+                        <aside class="gh-article-meta">
+                            <div class="gh-article-meta-inner">
+                                <figure class="gh-author-image" style="padding-right: 1px;">
+                                    <img src="https://www.gravatar.com/avatar/f17d019275739081f4da45e9a3f5b62f?s=250&amp;r=x&amp;d=mp"
+                                        alt="Mehmet Gungoren">
+                                </figure>
+                                <div class="gh-article-meta-wrapper">
+                                    <h4 class="gh-author-name">
+                                        <a href="">Mehmet Gungoren</a>
+                                    </h4>
+                                    <time class="gh-article-date" datetime="2023-01-15">Jan 15, 2023</time>
+                                </div>
+                            </div>
+                        </aside>
+                    </section>
+                </article>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

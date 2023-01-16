@@ -1,16 +1,17 @@
 module "cdn" {
   source = "terraform-aws-modules/cloudfront/aws"
 
-  comment             = "My Country Based CDN"
+  comment             = "My Location Based CDN"
   enabled             = true
   is_ipv6_enabled     = true
   price_class         = "PriceClass_All"
   retain_on_delete    = false
   wait_for_deployment = false
+  default_root_object = "index.html"
 
   create_origin_access_identity = true
   origin_access_identities = {
-    s3_bucket_one = "My Country Based CloudFront can access"
+    s3_bucket_one = "My Location Based CloudFront can access"
   }
 
   origin = {
