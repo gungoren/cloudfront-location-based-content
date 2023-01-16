@@ -50,6 +50,10 @@ resource "aws_s3_object" "global" {
   etag = filemd5("${path.module}/files/flag.png")
 }
 
+locals {
+  countries = toset(["CA", "ES", "IT", "JP", "TR", "US"])
+}
+
 resource "aws_s3_object" "countries_flag" {
   for_each     = local.countries
 
@@ -61,8 +65,4 @@ resource "aws_s3_object" "countries_flag" {
   etag = filemd5("${path.module}/files/flag_${each.key}.png")
 }
 
-
-locals {
-  countries = toset(["CA", "ES", "IT", "JP", "TR", "US"])
-}
 
